@@ -1,6 +1,11 @@
 import './globals.css';
 import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: 'Sirat AI',
+  description: 'Authentic Islamic Wisdom',
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -22,10 +27,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body style={{ margin: 0 }}>{children}</body>
     </html>
   );
-}
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en"><body style={{ margin: 0 }}>{children}</body></html>;
 }
